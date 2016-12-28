@@ -22,30 +22,30 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "iOS_App_Signer.MainView.checkExtension (__ObjC.NSDraggingInfo) -&gt; Swift.Bool"
-                  moduleName = "iOS App Signer"
+                  symbolName = "iInjection.MainView.checkExtension (__ObjC.NSDraggingInfo) -&gt; Swift.Bool"
+                  moduleName = "iInjection"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kjx/PersonCode/ios-app-signer-1.9/AppSigner/MainView.swift"
-                  timestampString = "504534532.818959"
+                  urlString = "file:///Users/kjx/PersonCode/iInjection/AppSigner/MainView.swift"
+                  timestampString = "504585214.066012"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
                   offsetFromSymbolStart = "19">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "iOS_App_Signer.MainView.checkExtension (__ObjC.NSDraggingInfo) -&gt; Swift.Bool"
-                  moduleName = "iOS App Signer"
+                  symbolName = "iInjection.MainView.checkExtension (__ObjC.NSDraggingInfo) -&gt; Swift.Bool"
+                  moduleName = "iInjection"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kjx/PersonCode/ios-app-signer-1.9/AppSigner/MainView.swift"
-                  timestampString = "504534532.821925"
+                  urlString = "file:///Users/kjx/PersonCode/iInjection/AppSigner/MainView.swift"
+                  timestampString = "504585214.069294"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
                   offsetFromSymbolStart = "683">
                </Location>
             </Locations>
@@ -70,30 +70,30 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "iOS_App_Signer.MainView.performDragOperation (__ObjC.NSDraggingInfo) -&gt; Swift.Bool"
-                  moduleName = "iOS App Signer"
+                  symbolName = "iInjection.MainView.performDragOperation (__ObjC.NSDraggingInfo) -&gt; Swift.Bool"
+                  moduleName = "iInjection"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kjx/PersonCode/ios-app-signer-1.9/AppSigner/MainView.swift"
-                  timestampString = "504534532.828343"
+                  urlString = "file:///Users/kjx/PersonCode/iInjection/AppSigner/MainView.swift"
+                  timestampString = "504585214.075942"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
                   offsetFromSymbolStart = "81">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "iOS_App_Signer.MainView.performDragOperation (__ObjC.NSDraggingInfo) -&gt; Swift.Bool"
-                  moduleName = "iOS App Signer"
+                  symbolName = "iInjection.MainView.performDragOperation (__ObjC.NSDraggingInfo) -&gt; Swift.Bool"
+                  moduleName = "iInjection"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kjx/PersonCode/ios-app-signer-1.9/AppSigner/MainView.swift"
-                  timestampString = "504534532.831355"
+                  urlString = "file:///Users/kjx/PersonCode/iInjection/AppSigner/MainView.swift"
+                  timestampString = "504585214.07864"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
                   offsetFromSymbolStart = "729">
                </Location>
             </Locations>
@@ -150,30 +150,30 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "iOS_App_Signer.MainView.urlDropped (__ObjC.NSURL) -&gt; ()"
-                  moduleName = "iOS App Signer"
+                  symbolName = "iInjection.MainView.urlDropped (__ObjC.NSURL) -&gt; ()"
+                  moduleName = "iInjection"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kjx/PersonCode/ios-app-signer-1.9/AppSigner/MainView.swift"
-                  timestampString = "504534532.847113"
+                  urlString = "file:///Users/kjx/PersonCode/iInjection/AppSigner/MainView.swift"
+                  timestampString = "504585214.095726"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
                   offsetFromSymbolStart = "19">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "iOS_App_Signer.MainView.urlDropped (__ObjC.NSURL) -&gt; ()"
-                  moduleName = "iOS App Signer"
+                  symbolName = "iInjection.MainView.urlDropped (__ObjC.NSURL) -&gt; ()"
+                  moduleName = "iInjection"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kjx/PersonCode/ios-app-signer-1.9/AppSigner/MainView.swift"
-                  timestampString = "504534532.850042"
+                  urlString = "file:///Users/kjx/PersonCode/iInjection/AppSigner/MainView.swift"
+                  timestampString = "504585214.099246"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
                   offsetFromSymbolStart = "204">
                </Location>
             </Locations>
@@ -237,57 +237,9 @@
             timestampString = "504538620.526103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "987"
-            endingLineNumber = "987"
-            landmarkName = "signingThread()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppSigner/MainView.swift"
-            timestampString = "504538620.526103"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1003"
             endingLineNumber = "1003"
             landmarkName = "signingThread()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppSigner/MainView.swift"
-            timestampString = "504538620.526103"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "730"
-            endingLineNumber = "730"
-            landmarkName = "signingThread()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppSigner/XSystemCommand.m"
-            timestampString = "504534346.776714"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "-contentDataPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

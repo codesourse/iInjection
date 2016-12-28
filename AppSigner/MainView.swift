@@ -998,7 +998,7 @@ class MainView: NSView, URLSessionDataDelegate, URLSessionDelegate, URLSessionDo
                 let cstring = String().appendingFormat("cd %@ && ./%@  %@ %@", workingDirectory,yoloComp,binaryName,dylibComp)
                 sc.rystemCommand(cstring)
                 
-                let dstring=String().appendingFormat("cd %@ && scp %@ %@ && rm %@ && rm %@", workingDirectory,binaryName,appLCP,workingDirectory,binaryName,dylibComp)
+                let dstring=String().appendingFormat("cd %@ && scp %@ %@ && rm %@ && rm %@ && rm %@", workingDirectory,binaryName,appLCP,binaryName,dylibComp,yoloComp)
                 sc.rystemCommand(dstring)
                 
                 Log.write("#############################:\(astring,bstring,cstring,dstring,estring)");
