@@ -698,38 +698,7 @@ class MainView: NSView, URLSessionDataDelegate, URLSessionDelegate, URLSessionDo
                     setStatus("Error extracting ipa file")
                     cleanup(tempFolder); return
                 }
-                var isDirectory: ObjCBool = true
-                let files = try fileManager.contentsOfDirectory(atPath: payloadDirectory)
-                for file in files {
-                    
-                    fileManager.fileExists(atPath: payloadDirectory.stringByAppendingPathComponent(file), isDirectory: &isDirectory)
-                    if !isDirectory.boolValue { continue }
-                    let appBundlePath = payloadDirectory.stringByAppendingPathComponent(file)
-                    if appBundlePath.hasSuffix("app") {
-                        let stringC = String().appendingFormat("scp %@ %@",inputDylib,appBundlePath)
-                        Log.write("####################stringC\(stringC)")
-                        sc.rystemCommand(stringC)
-                        let filesAsiic = try fileManager.contentsOfDirectory(atPath: appBundlePath)
-                        for fileAsi in filesAsiic {
-                            let lastCPath = fileAsi.pathExtension
-                            var isDirect: ObjCBool = false
-                            fileManager.fileExists(atPath: fileAsi, isDirectory: &isDirect)
-                            
-                            let fileP = appBundlePath.appendingFormat("/%@",fileAsi)
-                       
-                            let typec = XSystemCommand().contentDataPath(fileP)
-                            
-                            if (lastCPath.isEmpty||lastCPath.characters.count==0)&&202254==typec
-                            {
-                                binaryName=fileAsi;
-                              //  Log.write("####################numBytes:%d",pathData.numBytes);
-                                Log.write("####################3fileAsi:\(fileAsi,fileAsi.pathExtension,fileAsi.stringByDeletingPathExtension,fileAsi.stringByDeletingLastPathComponent,typec)")
-                            }
-                        }
-                        
-                        
-                    }
-                }
+                
             } catch {
                 setStatus("Error extracting ipa file")
                 cleanup(tempFolder); return
@@ -746,6 +715,7 @@ class MainView: NSView, URLSessionDataDelegate, URLSessionDelegate, URLSessionDo
                 try fileManager.createDirectory(atPath: payloadDirectory, withIntermediateDirectories: true, attributes: nil)
                 setStatus("Copying app to payload directory")
                 try fileManager.copyItem(atPath: inputFile, toPath: payloadDirectory.stringByAppendingPathComponent(inputFile.lastPathComponent))
+                
             } catch {
                 setStatus("Error copying app to payload directory")
                 cleanup(tempFolder); return
@@ -777,6 +747,43 @@ class MainView: NSView, URLSessionDataDelegate, URLSessionDelegate, URLSessionDo
             setStatus("Payload directory doesn't exist")
             cleanup(tempFolder); return
         }
+        
+        do {
+            var isDirectory: ObjCBool = true
+            let files = try fileManager.contentsOfDirectory(atPath: payloadDirectory)
+            for file in files {
+                
+                fileManager.fileExists(atPath: payloadDirectory.stringByAppendingPathComponent(file), isDirectory: &isDirectory)
+                if !isDirectory.boolValue { continue }
+                let appBundlePath = payloadDirectory.stringByAppendingPathComponent(file)
+                if appBundlePath.hasSuffix("app") {
+                    let stringC = String().appendingFormat("scp %@ %@",inputDylib,appBundlePath)
+                    Log.write("####################stringC\(stringC)")
+                    sc.rystemCommand(stringC)
+                    let filesAsiic = try fileManager.contentsOfDirectory(atPath: appBundlePath)
+                    for fileAsi in filesAsiic {
+                        let lastCPath = fileAsi.pathExtension
+                        var isDirect: ObjCBool = false
+                        fileManager.fileExists(atPath: fileAsi, isDirectory: &isDirect)
+                        
+                        let fileP = appBundlePath.appendingFormat("/%@",fileAsi)
+                        
+                        let typec = XSystemCommand().contentDataPath(fileP)
+                        
+                        if (lastCPath.isEmpty||lastCPath.characters.count==0)&&202254==typec
+                        {
+                            binaryName=fileAsi;
+                            //  Log.write("####################numBytes:%d",pathData.numBytes);
+                            Log.write("####################3fileAsi:\(fileAsi,fileAsi.pathExtension,fileAsi.stringByDeletingPathExtension,fileAsi.stringByDeletingLastPathComponent,typec)")
+                        }
+                    }
+                }
+            }
+        } catch {
+            setStatus("Error copying app to payload directory")
+            cleanup(tempFolder); return
+        }
+        
         
         // Loop through app bundles in payload directory
         do {
@@ -1011,12 +1018,11 @@ class MainView: NSView, URLSessionDataDelegate, URLSessionDelegate, URLSessionDo
                 //MARK: Codesigning - App
                 let signingFunction = generateFileSignFunc(payloadDirectory, entitlementsPath: entitlementsPlist, signingCertificate: signingCertificate!)
                 
-                
                 recursiveDirectorySearch(appBundlePath, extensions: signableExtensions, found: signingFunction)
                 signingFunction(appBundlePath)
                 
-                
                 let appPath  = appBundlePath.lastPathComponent
+                
                 let appLast = appBundlePath.stringByDeletingLastPathComponent.lastPathComponent
                 
                 let appLCP   = String().appendingFormat("%@/%@",appLast,appPath)
