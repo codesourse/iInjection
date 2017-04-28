@@ -13,7 +13,7 @@ You need a provisioning profile and signing certificate, you can get these from 
 
 You can then open up iOS App Signer and select your input file, signing certificate, provisioning file, and optionally specify a new application ID and/or application display name.
 
-Donate  https://github.com/codesourse/iInjection/blob/master/%E6%B1%82%E6%89%93%E8%B5%8F.png
+Donate ![avatar](求打赏.png)
 
 Thanks To
 
@@ -24,3 +24,4 @@ DanTheMan827/ios-app-signer The basic process was gleaned from the source code o
 KJCracks/yololib  
 
 ![avatar](iInjection逆向交流群群二维码.png)
+![avatar](求打赏.png)
