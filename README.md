@@ -25,5 +25,5 @@ Help && Donate
 
 ![avatar](iInjection逆向交流群群二维码.png)   
 
-![avatar](求打赏.png =50x50)
+![avatar](求打赏.png)
 
