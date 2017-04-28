@@ -21,9 +21,6 @@ DanTheMan827/ios-app-signer The basic process was gleaned from the source code o
 
 KJCracks/yololib  
 
+Help && Donate 
 
-Help
-![avatar](iInjection逆向交流群群二维码.png)
-
-Donate 
-![avatar](求打赏.png)
+![avatar](iInjection逆向交流群群二维码.png)   ![avatar](求打赏.png)
